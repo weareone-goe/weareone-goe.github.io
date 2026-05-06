@@ -236,11 +236,16 @@ h1,h2,h3,h4 { text-wrap: balance; line-height: 1.15; font-family: var(--font-dis
   padding: var(--space-6); box-shadow: var(--shadow-sm);
   border: 1px solid oklch(from var(--color-text) l c h / 0.07);
 }
-.team-avatar {
-  width: 64px; height: 64px; border-radius: var(--radius-full);
-  background: var(--color-primary-highlight);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 1.6rem; margin: 0 auto var(--space-3);
+.team-avatar img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Makes it circular */
+  object-fit: cover; /* Crops image to fit */
+  border: 2px solid #1a6b61;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto var(--space-3);
 }
 .team-name { font-size: var(--text-base); font-weight: 700; margin-bottom: var(--space-1); }
 .team-role { font-size: var(--text-xs); color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.06em; }
@@ -538,23 +543,74 @@ footer strong { color: #fff; }
     <p class="section-sub" style="text-align: center; margin-inline: auto;">Transdisziplinär, engagiert, neugierig.</p>
     <div class="team-grid">
       <div class="team-card">
-        <div class="team-avatar">👩‍🔬</div>
+        <div class="team-avatar">
+          <img src="files/antje.jpg" alt="Prof. Dr. Antje Risius" />
+        </div>
         <div class="team-name">Prof. Dr. Antje Risius</div>
         <div class="team-role">Projektleitung · Ernährungs- &amp; Agrarwissenschaften</div>
       </div>
       <div class="team-card">
-        <div class="team-avatar">🎧</div>
+        <div class="team-avatar">
+          <img src="files/dominik.jpg" alt="Dominik Eulberg" />
+        </div>
         <div class="team-name">Dominik Eulberg</div>
         <div class="team-role">Ökologe · Natur-Sound-Künstler · DJ</div>
       </div>
       <div class="team-card">
-        <div class="team-avatar">💃</div>
-        <div class="team-name"><a href="https://noevaldesvega.com/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Noé Valdés Vega</a></div>
+        <div class="team-avatar">
+          <img src="files/noe.jpg" alt="Noé Valdes Vega" />
+        </div>
+        <div class="team-name"><a href="https://noevaldesvega.com/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Noé Valdes Vega</a></div>
         <div class="team-role">Tänzer · Choreograf · Bewegungs-Workshops</div>
       </div>
-
+      <div></div>
     </div>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-avatar">
+          <img src="files/berenike.png" alt="Berenike Lohmeyer" />
+        </div>
+        <div class="team-name">Berenike Lohmeyer</div>
+        <div class="team-role">Rewind Co-Leiterin</div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">
+          <img src="files/michelle.png" alt="Michelle Büttner" />
+        </div>
+        <div class="team-name">Michelle Büttner</div>
+        <div class="team-role">Rewind Co-Leiterin</div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">
+          <img src="files/miriam.jpg" alt="Miriam Genthner" />
+        </div>
+        <div class="team-name">Miriam Genthner</div>
+        <div class="team-role">Regionalkoordinatorin für Fulda</div>
+      </div>
+      <div></div>
   </div>
+      <div class="team-grid">
+      <div class="team-card">
+        <div class="team-avatar">
+          <img src="files/robert.png" alt="Robert Brennan" />
+        </div>
+        <div class="team-name">Robert Brennan</div>
+        <div class="team-role">Leiter für randomisierte kontrollierte Studie</div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">
+          <img src="files/gabriel.jpg" alt="Gabriel Armas-Cardona" />
+        </div>
+        <div class="team-name">Gabriel Armas-Cardona</div>
+        <div class="team-role">Veranstalter</div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">
+          <img src="files/thomas.jpg" alt="Thomas Art Burke" />
+        </div>
+        <div class="team-name">Thomas Art Burke</div>
+        <div class="team-role">Datenanalyst</div>
+      </div>
 </section>
 
 <!-- CTA -->
