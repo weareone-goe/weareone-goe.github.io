@@ -46,30 +46,38 @@
         <div class="pillar">
           <div class="pillar-icon green">🥗</div>
           <div>
-            <div class="pillar-title"><a href="#" onclick="checkPassword(event)">Biodiversität Show Termin 1</a></div>
+            <div class="pillar-title"><a href="#" onclick='checkPassword(event, "https://hsfulda.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=1fa8b777-1af5-4afd-b3e8-b43c00e4a86c")'>Biodiversität Show Termin 1</a></div>
             <p class="pillar-desc">Termin 1: Biodiversität Show mit Dominik Eulberg und Prof. Dr. Antje Risius</p>
           </div>
         </div>
         <div class="pillar">
           <div class="pillar-icon teal">🌿</div>
           <div>
-            <div class="pillar-title"><a href="#" onclick="checkPassword2(event)">Biodiversität Show Termin 2</a></div>
+            <div class="pillar-title"><a href="#" onclick='checkPassword(event, "https://hsfulda.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=3f9ac0c3-b82e-4378-bddb-b447007d5d59")'>Biodiversität Show Termin 2</a></div>
             <p class="pillar-desc">Termin 2: Biodiversität Show mit Dominik Eulberg und Prof. Dr. Antje Risius</p>
           </div>
         </div>
         <div class="pillar">
           <div class="pillar-icon warm">🎵</div>
           <div>
-            <div class="pillar-title"><a href="#" onclick="checkPassword3(event)">Spannendes aus der Natur</a></div>
+            <div class="pillar-title"><a href="#" onclick='checkPassword(event, "https://owncloud.gwdg.de/index.php/s/gKMKjrygdSsMNPm")'>Spannendes aus der Natur</a></div>
             <p class="pillar-desc">Das Video soll als ein kleiner Einstieg dienen, um besser die Natur wahrzunehmen und den Anreiz schaffen sich selber zu informieren.</p>
           </div>
         </div>
         <div class="pillar">
           <div class="pillar-icon warm">🎵</div>
           <div>
-            <div class="pillar-title">Termin 4</div>
-            <p class="pillar-desc">Kommt bald.</p>
+            <div class="pillar-title"><a href="#" onclick='checkPassword(event, "https://owncloud.gwdg.de/index.php/s/OPzbiiWZWq8NFUa")'>Spannendes aus der Natur 2</a></div>
+            <p class="pillar-desc">Termin 2</p>
           </div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon warm">🎵</div>
+          <div>
+            <div class="pillar-title"><a href="#" onclick='checkPassword(event, "https://owncloud.gwdg.de/index.php/s/zUx7QQF8541b2wa")'>Spannendes aus der Natur 3</a></div>
+            <p class="pillar-desc">Termin 3</p>
+          </div>
+        </div>
         </div>
       </div>
     </div>
@@ -91,33 +99,11 @@
   </p>
 </footer>
 <script>
-function checkPassword(event) {
+function checkPassword(event, url) {
   const password = prompt("Bitte geben Sie das Passwort ein:");
   if (password === "anthropocene1737") {
     // ✅ Navigate in the same tab
-    window.location.href = "https://hsfulda.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=1fa8b777-1af5-4afd-b3e8-b43c00e4a86c";
-  } else {
-    alert("Falsches Passwort!");
-    event.preventDefault();
-    return false;
-  }
-}
-function checkPassword2(event) {
-  const password = prompt("Bitte geben Sie das Passwort ein:");
-  if (password === "anthropocene1737") {
-    // ✅ Navigate in the same tab
-    window.location.href = "https://hsfulda.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=3f9ac0c3-b82e-4378-bddb-b447007d5d59";
-  } else {
-    alert("Falsches Passwort!");
-    event.preventDefault();
-    return false;
-  }
-}
-function checkPassword3(event) {
-  const password = prompt("Bitte geben Sie das Passwort ein:");
-  if (password === "anthropocene1737") {
-    // ✅ Navigate in the same tab
-    window.location.href = "https://owncloud.gwdg.de/index.php/s/gKMKjrygdSsMNPm";
+    window.location.href = url;
   } else {
     alert("Falsches Passwort!");
     event.preventDefault();
